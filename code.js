@@ -179,7 +179,7 @@ function handleEvent() {
         document.getElementById("brainrot").play();
         
     
-    } else if  (battery <= 30 && op != 8 && op >= 5) { //netruel ending
+    } else if  (battery <= 30 && op != 8 && op >= 5 && battery != 0) { //netruel ending
         displayText(" you were not weird but had no rizz you were friendzoned");
 
         setTimeout(() => {
