@@ -88,7 +88,7 @@ function op1Plus() {
 }
 
 function op2Plus() {
-    op += 3;
+    op += 2;
     incrementBattery(30);
 }
 
@@ -137,7 +137,7 @@ function handleEvent() {
         displayChoice("Wanna go to the mall", "Can you help me solve this math problem?", "Want to come over?");
         op += 2;
     }
-    else if (op == 3 && battery == 40) { // secret ending
+    else if (op == 4 && battery == 40) { // secret ending
         displayText("ok! i will bring my friends");
 
     setTimeout(() => {
@@ -151,7 +151,7 @@ function handleEvent() {
         document.getElementById("peter").play();
         
     
-    } else if (battery > 30 && op == 5) { // good ending
+    } else if (battery > 30) { // good ending
          displayText("sure!");
          
         setTimeout(() => {
@@ -165,7 +165,7 @@ function handleEvent() {
         document.getElementById("sexy").play();
         
     
-    } else if (op == 5 && battery == 0) { //bad ending
+    } else if (op == 8 && battery == 0) { //bad ending
         displayText("Sorry, maybe too early"); 
 
         setTimeout(() => {
@@ -179,7 +179,7 @@ function handleEvent() {
         document.getElementById("brainrot").play();
         
     
-    } else if  (battery < 30 && battery >= 10) { //netruel ending
+    } else if  (battery <= 30 && op != 8 && op > 4) { //netruel ending
         displayText(" you were not weird but had no rizz you were friendzoned");
 
         setTimeout(() => {
