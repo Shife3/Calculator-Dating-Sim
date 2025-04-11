@@ -117,6 +117,7 @@ function handleEvent() {
         displayText("uh...");
         displayChoice("Wanna go to the mall", "Can you help me solve this math problem?", "Want to come over?");
         op += 3;
+        
     } else if (op === 4 && battery === 40) {
         displayText("ok! i will bring my friends");
         setTimeout(() => {
@@ -127,7 +128,8 @@ function handleEvent() {
         }, 5000);
         document.getElementById("peter").play();
         hideChoices();
-    } else if (op === 6 && battery === 60) {
+        
+    } else if (op === 5 && battery === 60) {
         displayText("sure!");
         setTimeout(() => {
             displayText("narrator: you visited each other for a month and she finally asks you out to the cafe");
@@ -137,7 +139,8 @@ function handleEvent() {
         }, 5000);
         document.getElementById("sexy").play();
         hideChoices();
-    } else if (op === 8 && battery === 0) {
+    
+    } else if (op === 6 && battery === 0) {
         displayText("Sorry, maybe too early");
         setTimeout(() => {
             displayText("you were weird and she never talked with you again");
@@ -147,8 +150,11 @@ function handleEvent() {
         }, 5000);
         document.getElementById("brainrot").play();
         hideChoices();
+    
     } else {
         displayText("you were not weird but had no rizz, you were friendzoned");
         setTimeout(() => {
             displayText("*neutral ending*");
         },
+
+        document.getElementById("galaxy").play();
