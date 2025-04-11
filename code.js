@@ -123,19 +123,19 @@ function handleEvent() {
         removeText();
         displayText("*blush*");
         displayChoice("Wanna go to the mall", "Can you help me solve this math problem?", "Want to come over?");
-        op += 2;
+        op += 4;
     }
     else if (op == 2) {
         removeText();
         displayText("same!");
         displayChoice("Wanna go to the mall", "Can you help me solve this math problem?", "Want to come over?");
-        op += 2;
+        op += 3;
     
     } else if (op == 3) {
         removeText();
         displayText("uh...");
         displayChoice("Wanna go to the mall", "Can you help me solve this math problem?", "Want to come over?");
-        op += 2;
+        op += 3;
     }
     else if (op == 4 && battery == 40) { // secret ending
         displayText("ok! i will bring my friends");
@@ -151,7 +151,7 @@ function handleEvent() {
         document.getElementById("peter").play();
         
     
-    } else if (battery > 30) { // good ending
+    } else if (op == 5 && battery = 60) { // good ending
          displayText("sure!");
          
         setTimeout(() => {
@@ -165,7 +165,7 @@ function handleEvent() {
         document.getElementById("sexy").play();
         
     
-    } else if (op == 8 && battery == 0) { //bad ending
+    } else if (op == 6 && battery == 0) { //bad ending
         displayText("Sorry, maybe too early"); 
 
         setTimeout(() => {
@@ -179,14 +179,14 @@ function handleEvent() {
         document.getElementById("brainrot").play();
         
     
-    } else if  (battery <= 30 && op != 8 && op > 4) { //netruel ending
+    } else { //netruel ending
         displayText(" you were not weird but had no rizz you were friendzoned");
 
         setTimeout(() => {
             displayText("*neutruel ending*");
         }, 3000);
 
-        document.getElementById("galaxy").play();
+        
     }
     
     
