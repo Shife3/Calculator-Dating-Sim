@@ -108,16 +108,7 @@ function wait(ms) {
 
 function handleEvent() {
         
-    if (op >= 4) {
-        op1.removeEventListener("click", handleEvent);
-        op2.removeEventListener("click", handleEvent);
-        op3.removeEventListener("click", handleEvent);
 
-        op1.style.display = "none";
-        op2.style.display = "none";
-        op3.style.display = "none";
-    }
-    
     
     if (op == 1) {
         removeText();
@@ -186,6 +177,17 @@ function handleEvent() {
             displayText("*neutruel ending*");
         }, 3000);
 
+          if (op >= 4) {
+        op1.removeEventListener("click", handleEvent);
+        op2.removeEventListener("click", handleEvent);
+        op3.removeEventListener("click", handleEvent);
+
+        op1.style.display = "none";
+        op2.style.display = "none";
+        op3.style.display = "none";
+        op = 0;
+    }
+    
         
     }
     
