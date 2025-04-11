@@ -177,6 +177,9 @@ function handleEvent() {
             displayText("*neutruel ending*");
         }, 3000);
 
+        document.getElementById("galaxy").play();
+    }
+        
           if (op >= 4) {
         op1.removeEventListener("click", handleEvent);
         op2.removeEventListener("click", handleEvent);
@@ -189,11 +192,9 @@ function handleEvent() {
     }
     
         
-    }
-    
-    
-
 }
+    
+    
 
 function removeText() {
     document.getElementById("text").textContent = "";
