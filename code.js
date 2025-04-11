@@ -155,6 +155,8 @@ function handleEvent() {
         displayText("you were not weird but had no rizz, you were friendzoned");
         setTimeout(() => {
             displayText("*neutral ending*");
+            document.getElementById("galaxy").play();
+        }, 2000);
         },
 
-        document.getElementById("galaxy").play();
+        
