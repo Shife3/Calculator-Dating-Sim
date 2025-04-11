@@ -123,7 +123,7 @@ function handleEvent() {
         removeText();
         displayText("*blush*");
         displayChoice("Wanna go to the mall", "Can you help me solve this math problem?", "Want to come over?");
-        op += 4;
+        op += 2;
     }
     else if (op == 2) {
         removeText();
@@ -151,7 +151,7 @@ function handleEvent() {
         document.getElementById("peter").play();
         
     
-    } else if (op == 5 && battery == 60) { // good ending
+    } else if (op == 6 && battery == 60) { // good ending
          displayText("sure!");
          
         setTimeout(() => {
@@ -165,7 +165,7 @@ function handleEvent() {
         document.getElementById("sexy").play();
         
     
-    } else if (op == 6 && battery == 0) { //bad ending
+    } else if (op == 8 && battery == 0) { //bad ending
         displayText("Sorry, maybe too early"); 
 
         setTimeout(() => {
