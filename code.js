@@ -151,7 +151,7 @@ function handleEvent() {
         document.getElementById("peter").play();
         
     
-    } else if (op == 5 && battery = 60) { // good ending
+    } else if (op == 5 && battery == 60) { // good ending
          displayText("sure!");
          
         setTimeout(() => {
