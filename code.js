@@ -88,7 +88,7 @@ function op1Plus() {
 }
 
 function op2Plus() {
-    op += 2;
+    op += 3;
     incrementBattery(30);
 }
 
@@ -151,7 +151,7 @@ function handleEvent() {
         document.getElementById("peter").play();
         
     
-    } else if (battery > 30) { // good ending
+    } else if (battery > 30 && op == 5) { // good ending
          displayText("sure!");
          
         setTimeout(() => {
@@ -179,7 +179,7 @@ function handleEvent() {
         document.getElementById("brainrot").play();
         
     
-    } else if  (battery <= 30 && op != 8 && op > 4) { //netruel ending
+    } else if  (battery <= 30 && op != 8 && op >= 5) { //netruel ending
         displayText(" you were not weird but had no rizz you were friendzoned");
 
         setTimeout(() => {
